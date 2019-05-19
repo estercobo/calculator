@@ -22,3 +22,12 @@ class TestCalculator:
         sum = Calculator.sum(number1)
         # assert
         assert sum == expectedSum
+
+    @staticmethod
+    def test_sum_without_params():
+        # arrange
+        expectedSum = 0
+        # act
+        sum = Calculator.sum()
+        # assert
+        assert sum == expectedSum
