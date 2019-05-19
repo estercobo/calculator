@@ -1,0 +1,2 @@
+###### Requirements without Version Specifiers ######
+pytest >= 4.5.0
