@@ -42,3 +42,14 @@ class TestCalculator:
         sum = Calculator.sum(number1, number2)
         # assert
         assert sum == expectedSum
+
+    @staticmethod
+    def test_sum_with_float_numbers():
+        # arrange
+        number1 = 1.0
+        number2 = 2.3
+        expectedSum = 3.3
+        # act
+        sum = Calculator.sum(number1, number2)
+        # assert
+        assert sum == expectedSum
