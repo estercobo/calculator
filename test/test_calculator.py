@@ -75,3 +75,12 @@ class TestCalculator:
         sum = Calculator.subtract(number1)
         # assert
         assert sum == expectedSum
+
+    @staticmethod
+    def test_subtract_without_params():
+        # arrange
+        expectedSum = 0
+        # act
+        sum = Calculator.subtract()
+        # assert
+        assert sum == expectedSum
