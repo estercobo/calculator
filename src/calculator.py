@@ -30,4 +30,6 @@ class Calculator:
         return round(multiply, 2)
 
     def divide(number1, number2):
+        if number2 == 0:
+            return None
         return number1 / number2
