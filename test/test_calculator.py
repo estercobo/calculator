@@ -225,3 +225,14 @@ class TestCalculator:
         # assert
         assert divide == expectedDivide
 
+    @staticmethod
+    def test_divide_by_0_cannot_be_done():
+        # arrange
+        number1 = 6
+        number2 = 0
+        expectedDivide = None
+        # act
+        divide = Calculator.divide(number1, number2)
+        # assert
+        assert divide == expectedDivide
+
