@@ -9,7 +9,7 @@ class TestCalculator:
         number2 = 2
         expectedSum = 3
         # act
-        sum = Calculator.sum(number1, number2)
+        sum = Calculator.sum([number1, number2])
         # assert
         assert sum == expectedSum
 
@@ -19,7 +19,7 @@ class TestCalculator:
         number1 = 1
         expectedSum = 1
         # act
-        sum = Calculator.sum(number1)
+        sum = Calculator.sum([number1])
         # assert
         assert sum == expectedSum
 
@@ -39,7 +39,7 @@ class TestCalculator:
         number2 = -2
         expectedSum = -3
         # act
-        sum = Calculator.sum(number1, number2)
+        sum = Calculator.sum([number1, number2])
         # assert
         assert sum == expectedSum
 
@@ -50,7 +50,7 @@ class TestCalculator:
         number2 = 2.3
         expectedSum = 3.3
         # act
-        sum = Calculator.sum(number1, number2)
+        sum = Calculator.sum([number1, number2])
         # assert
         assert sum == expectedSum
 
