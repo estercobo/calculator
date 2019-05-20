@@ -236,3 +236,14 @@ class TestCalculator:
         # assert
         assert divide == expectedDivide
 
+    @staticmethod
+    def test_divide_with_negative_numbers():
+        # arrange
+        number1 = -6
+        number2 = 3
+        expectedDivide = -2
+        # act
+        divide = Calculator.divide(number1, number2)
+        # assert
+        assert divide == expectedDivide
+
