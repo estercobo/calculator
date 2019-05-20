@@ -8,7 +8,7 @@ class Calculator:
     def subtract(numbers = []):
         if len(numbers) == 0:
             return 0
-            
+
         subtract = None
         for number in numbers:
             if subtract == None:
@@ -16,3 +16,6 @@ class Calculator:
             else:
                 subtract -= number
         return subtract
+
+    def multiply():
+        pass

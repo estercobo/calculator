@@ -132,3 +132,16 @@ class TestCalculator:
         subtract = Calculator.subtract([number1, number2, number3, number4])
         # assert
         assert subtract == expectedSubtract
+
+
+    #------ Multiply tests -----#
+    @staticmethod
+    def test_multiply():
+        # arrange
+        number1 = 2
+        number2 = 3
+        expectedMultiply = 6
+        # act
+        multiply = Calculator.multiply(number1, number2)
+        # assert
+        assert multiply == expectedMultiply
