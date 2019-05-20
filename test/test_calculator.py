@@ -1,7 +1,7 @@
 from ..src.calculator import *
 
 class TestCalculator:
-
+    #------ Sum tests -----#
     @staticmethod
     def test_sum():
         # arrange
@@ -54,6 +54,7 @@ class TestCalculator:
         # assert
         assert sum == expectedSum
 
+    #------ Subtract tests -----#
     @staticmethod
     def test_subtract():
         # arrange
