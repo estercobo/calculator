@@ -177,3 +177,16 @@ class TestCalculator:
         multiply = Calculator.multiply(number1, number2)
         # assert
         assert multiply == expectedMultiply
+
+    @staticmethod
+    def test_multiply_with_X_numbers():
+        # arrange
+        number1 = 2
+        number2 = 3
+        number3 = 1
+        number4 = 5
+        expectedMultiply = 30
+        # act
+        multiply = Calculator.multiply([number1, number2, number3, number4])
+        # assert
+        assert multiply == expectedMultiply
