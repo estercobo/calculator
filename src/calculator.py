@@ -18,4 +18,4 @@ class Calculator:
         return subtract
 
     def multiply(number1, number2 = 1):
-        return number1 * number2
+        return round(number1 * number2, 2)
