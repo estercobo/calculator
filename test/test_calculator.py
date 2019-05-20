@@ -145,3 +145,13 @@ class TestCalculator:
         multiply = Calculator.multiply(number1, number2)
         # assert
         assert multiply == expectedMultiply
+
+    @staticmethod
+    def test_multiply_without_number2():
+        # arrange
+        number1 = 2
+        expectedMultiply = 2
+        # act
+        multiply = Calculator.multiply(number1)
+        # assert
+        assert multiply == expectedMultiply
