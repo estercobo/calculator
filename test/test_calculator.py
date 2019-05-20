@@ -142,7 +142,7 @@ class TestCalculator:
         number2 = 3
         expectedMultiply = 6
         # act
-        multiply = Calculator.multiply(number1, number2)
+        multiply = Calculator.multiply([number1, number2])
         # assert
         assert multiply == expectedMultiply
 
@@ -152,7 +152,7 @@ class TestCalculator:
         number1 = 2
         expectedMultiply = 2
         # act
-        multiply = Calculator.multiply(number1)
+        multiply = Calculator.multiply([number1])
         # assert
         assert multiply == expectedMultiply
 
@@ -163,7 +163,7 @@ class TestCalculator:
         number2 = 3
         expectedMultiply = -6
         # act
-        multiply = Calculator.multiply(number1, number2)
+        multiply = Calculator.multiply([number1, number2])
         # assert
         assert multiply == expectedMultiply
 
@@ -174,7 +174,7 @@ class TestCalculator:
         number2 = 3.0
         expectedMultiply = -6.9
         # act
-        multiply = Calculator.multiply(number1, number2)
+        multiply = Calculator.multiply([number1, number2])
         # assert
         assert multiply == expectedMultiply
 

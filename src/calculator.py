@@ -17,5 +17,14 @@ class Calculator:
                 subtract -= number
         return subtract
 
-    def multiply(number1, number2 = 1):
-        return round(number1 * number2, 2)
+    def multiply(numbers = []):
+        if len(numbers) == 0:
+            return 0
+
+        multiply = None
+        for number in numbers:
+            if multiply == None:
+                multiply = number
+            else:
+                multiply *= number
+        return round(multiply, 2)
