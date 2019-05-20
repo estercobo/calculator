@@ -30,4 +30,4 @@ class Calculator:
         return round(multiply, 2)
 
     def divide(number1, number2):
-        pass
+        return number1 / number2
