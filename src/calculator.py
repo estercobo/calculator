@@ -28,3 +28,6 @@ class Calculator:
             else:
                 multiply *= number
         return round(multiply, 2)
+
+    def divide(number1, number2):
+        pass
