@@ -5,5 +5,14 @@ class Calculator:
             sum += number
         return sum
 
-    def subtract(number1 = 0, number2 = 0):
-        return number1 - number2
+    def subtract(numbers = []):
+        if len(numbers) == 0:
+            return 0
+            
+        subtract = None
+        for number in numbers:
+            if subtract == None:
+                subtract = number
+            else:
+                subtract -= number
+        return subtract

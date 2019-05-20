@@ -75,9 +75,9 @@ class TestCalculator:
         number2 = 1
         expectedSubtract = 1
         # act
-        sum = Calculator.subtract(number1, number2)
+        subtract = Calculator.subtract([number1, number2])
         # assert
-        assert sum == expectedSubtract
+        assert subtract == expectedSubtract
 
     @staticmethod
     def test_subtract_without_number2():
@@ -85,18 +85,18 @@ class TestCalculator:
         number1 = 2
         expectedSubtract = 2
         # act
-        sum = Calculator.subtract(number1)
+        subtract = Calculator.subtract([number1])
         # assert
-        assert sum == expectedSubtract
+        assert subtract == expectedSubtract
 
     @staticmethod
     def test_subtract_without_params():
         # arrange
         expectedSubtract = 0
         # act
-        sum = Calculator.subtract()
+        subtract = Calculator.subtract()
         # assert
-        assert sum == expectedSubtract
+        assert subtract == expectedSubtract
 
     @staticmethod
     def test_subtract_with_negative_numbers():
@@ -105,9 +105,9 @@ class TestCalculator:
         number2 = -1
         expectedSubtract = -1
         # act
-        sum = Calculator.subtract(number1, number2)
+        subtract = Calculator.subtract([number1, number2])
         # assert
-        assert sum == expectedSubtract
+        assert subtract == expectedSubtract
 
     @staticmethod
     def test_subtract_with_float_numbers():
@@ -116,9 +116,9 @@ class TestCalculator:
         number2 = 1.2
         expectedSubtract = 1.2
         # act
-        sum = Calculator.subtract(number1, number2)
+        subtract = Calculator.subtract([number1, number2])
         # assert
-        assert sum == expectedSubtract
+        assert subtract == expectedSubtract
 
     @staticmethod
     def test_subtract_for_X_numbers():
@@ -129,6 +129,6 @@ class TestCalculator:
         number4 = 1
         expectedSubtract = -4
         # act
-        sum = Calculator.subtract([number1, number2, number3, number4])
+        subtract = Calculator.subtract([number1, number2, number3, number4])
         # assert
-        assert sum == expectedSubtract
+        assert subtract == expectedSubtract
