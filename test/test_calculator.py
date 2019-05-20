@@ -73,49 +73,62 @@ class TestCalculator:
         # arrange
         number1 = 2
         number2 = 1
-        expectedSum = 1
+        expectedSubtract = 1
         # act
         sum = Calculator.subtract(number1, number2)
         # assert
-        assert sum == expectedSum
+        assert sum == expectedSubtract
 
     @staticmethod
     def test_subtract_without_number2():
         # arrange
         number1 = 2
-        expectedSum = 2
+        expectedSubtract = 2
         # act
         sum = Calculator.subtract(number1)
         # assert
-        assert sum == expectedSum
+        assert sum == expectedSubtract
 
     @staticmethod
     def test_subtract_without_params():
         # arrange
-        expectedSum = 0
+        expectedSubtract = 0
         # act
         sum = Calculator.subtract()
         # assert
-        assert sum == expectedSum
+        assert sum == expectedSubtract
 
     @staticmethod
     def test_subtract_with_negative_numbers():
         # arrange
         number1 = -2
         number2 = -1
-        expectedSum = -1
+        expectedSubtract = -1
         # act
         sum = Calculator.subtract(number1, number2)
         # assert
-        assert sum == expectedSum
+        assert sum == expectedSubtract
 
     @staticmethod
     def test_subtract_with_float_numbers():
         # arrange
         number1 = 2.4
         number2 = 1.2
-        expectedSum = 1.2
+        expectedSubtract = 1.2
         # act
         sum = Calculator.subtract(number1, number2)
         # assert
-        assert sum == expectedSum
+        assert sum == expectedSubtract
+
+    @staticmethod
+    def test_subtract_for_X_numbers():
+        # arrange
+        number1 = 3
+        number2 = 2
+        number3 = 4
+        number4 = 1
+        expectedSubtract = -4
+        # act
+        sum = Calculator.subtract([number1, number2, number3, number4])
+        # assert
+        assert sum == expectedSubtract
