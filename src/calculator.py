@@ -17,5 +17,5 @@ class Calculator:
                 subtract -= number
         return subtract
 
-    def multiply():
-        pass
+    def multiply(number1, number2):
+        return number1 * number2
