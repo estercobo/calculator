@@ -190,3 +190,15 @@ class TestCalculator:
         multiply = Calculator.multiply([number1, number2, number3, number4])
         # assert
         assert multiply == expectedMultiply
+
+    @staticmethod
+    def test_multiply_by_0():
+        # arrange
+        number1 = 2
+        number2 = 0
+        expectedMultiply = 0
+        # act
+        multiply = Calculator.multiply([number1, number2])
+        # assert
+        assert multiply == expectedMultiply
+
