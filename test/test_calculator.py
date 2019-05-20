@@ -166,3 +166,14 @@ class TestCalculator:
         multiply = Calculator.multiply(number1, number2)
         # assert
         assert multiply == expectedMultiply
+
+    @staticmethod
+    def test_multiply_with_float_numbers():
+        # arrange
+        number1 = -2.3
+        number2 = 3.0
+        expectedMultiply = -6.9
+        # act
+        multiply = Calculator.multiply(number1, number2)
+        # assert
+        assert multiply == expectedMultiply
