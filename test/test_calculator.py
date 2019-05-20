@@ -155,3 +155,14 @@ class TestCalculator:
         multiply = Calculator.multiply(number1)
         # assert
         assert multiply == expectedMultiply
+
+    @staticmethod
+    def test_multiply_with_negative_numbers():
+        # arrange
+        number1 = -2
+        number2 = 3
+        expectedMultiply = -6
+        # act
+        multiply = Calculator.multiply(number1, number2)
+        # assert
+        assert multiply == expectedMultiply
