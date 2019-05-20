@@ -95,3 +95,14 @@ class TestCalculator:
         sum = Calculator.subtract(number1, number2)
         # assert
         assert sum == expectedSum
+
+    @staticmethod
+    def test_subtract_with_float_numbers():
+        # arrange
+        number1 = 2.4
+        number2 = 1.2
+        expectedSum = 1.2
+        # act
+        sum = Calculator.subtract(number1, number2)
+        # assert
+        assert sum == expectedSum
