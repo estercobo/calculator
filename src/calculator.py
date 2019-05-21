@@ -35,4 +35,9 @@ class Calculator:
         return number1 / number2
 
     def square(number):
-        pass
+        square = 1
+        for x in range(1, 100):
+            if x*x >= number:
+                square = x
+                break
+        return square

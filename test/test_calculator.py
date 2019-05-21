@@ -265,6 +265,6 @@ class TestCalculator:
         number = 25
         expectedSquare = 5
         # act
-        square = Calculator.square(number1)
+        square = Calculator.square(number)
         # assert
         assert square == expectedSquare
