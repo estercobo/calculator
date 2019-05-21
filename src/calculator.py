@@ -36,7 +36,8 @@ class Calculator:
 
     def square(number):
         square = 1
-        for x in range(1, 100):
+        end_range = int(number/2)
+        for x in range(1, end_range):
             if x*x >= number:
                 square = x
                 break
