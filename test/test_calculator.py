@@ -247,3 +247,24 @@ class TestCalculator:
         # assert
         assert divide == expectedDivide
 
+    @staticmethod
+    def test_divide_with_float_numbers():
+        # arrange
+        number1 = 6.6
+        number2 = 2
+        expectedDivide = 3.3
+        # act
+        divide = Calculator.divide(number1, number2)
+        # assert
+        assert divide == expectedDivide
+
+    #------ Square root tests -----#
+    @staticmethod
+    def test_square():
+        # arrange
+        number = 25
+        expectedSquare = 5
+        # act
+        square = Calculator.square(number1)
+        # assert
+        assert square == expectedSquare

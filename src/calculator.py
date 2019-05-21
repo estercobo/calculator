@@ -33,3 +33,6 @@ class Calculator:
         if number2 == 0:
             return None
         return number1 / number2
+
+    def square(number):
+        pass
