@@ -268,3 +268,13 @@ class TestCalculator:
         square = Calculator.square(number)
         # assert
         assert square == expectedSquare
+
+    @staticmethod
+    def test_square_for_big_numbers():
+        # arrange
+        number = 12544
+        expectedSquare = 112
+        # act
+        square = Calculator.square(number)
+        # assert
+        assert square == expectedSquare
